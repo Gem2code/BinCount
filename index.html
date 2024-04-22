@@ -12,25 +12,25 @@
 
         <div class="chart">
             <ul class="numbers">
-                <li><span>50</span></li>
-                <li><span>25</span></li>
+                <li><span>90</span></li>
+                <li><span>45</span></li>
                 <li><span>0</span></li>
             </ul>
             <ul class="bars">
                 <li><div class="bar invisible" data-percentage="40"></div><span></span></li>
-                <li><div class="bar yes" data-percentage="31"></div><span>YES</span></li>
-                <li><div class="bar no" data-percentage="40"></div><span>NO</span></li>
+                <li><div class="bar yes" data-percentage="35"></div><span>YES</span></li>
+                <li><div class="bar no" data-percentage="79"></div><span>NO</span></li>
             </ul>
         </div>
 
-        <p>The number of plastic-pieces thrown into the bins up until 14 April 2024. </p>
+        <p>The number of plastic-pieces thrown into the bins up until 22 April 2024. </p>
 
 
 
         <script type="text/javascript">
             $(function(){
                 $('.bars li .bar').each(function(key, bar){
-                    var percentage = $(this).data('percentage')*2;
+                    var percentage = $(this).data('percentage');
                     $(this).animate({
                         'height': percentage + '%'
                     }, 2000);
